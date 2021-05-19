@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
+
 import './App.css';
 
+import Form from './components/Form/Form'
+import Header from './components/Header/Header'
+import PokemonCard from './components/PokemonCard/PokemonCard'
+
 function App() {
+	
+	
+	const [getNumber, setNumber] = useState(1)
+
+	const changeNumber =(newNumber) => {
+		setNumber(newNumber)
+	}
+	
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header></Header>
+        <Form handleChange={changeNumber}></Form>
+        <PokemonCard pokemonNumber={getNumber}></PokemonCard>
     </div>
   );
 }
