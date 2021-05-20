@@ -26,7 +26,7 @@ function PokemonCard({pokemonNumber, types}) {
 	
 					<section className="types">
 		<ul>
-			{types(data.types)}
+			{types != null ? types(data.types) : null}
 				{data.types.map(item => {
 					return <li key={item.slot} className={"type " + item.type.name}>{item.type.name}</li>
 				})}

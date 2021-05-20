@@ -23,7 +23,7 @@ function App() {
 	
   return (
     <section className="App">
-        <section className={"pokedex " + types[0].type.name}>
+        <section className={"pokedex " + types[0].type?.name}>
           <Header></Header>
         <Form handleChange={changeNumber}></Form>
         <PokemonCard pokemonNumber={getNumber} types={getTypes}></PokemonCard>
