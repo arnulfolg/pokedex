@@ -3,14 +3,15 @@
 			flex
 			justify-center
 			items-center
-			h-screen
-			bg-red-200
+			min-h-screen
+			bg-red-50
 }
 
 .pokedex {
 	@apply 
 			bg-white
-			p-0
+			p-4
+			bg-red-600
 			rounded-lg
 			w-6/12
 }
@@ -39,15 +40,17 @@
 			flex-wrap
 			flex-row
 			gap-1
+			bg-white
 }
 
 .button {
 	@apply
-			bg-gray-500
-			hover:bg-gray-800
+			bg-gray-800
+			hover:bg-gray-600
 			transition-all
 			px-4
 			py-2
+			h-12
 			text-white
 			hover:text-white
 			rounded-md
@@ -68,6 +71,7 @@
 			border-red-400
 			border-2
 			flex-grow
+			h-12
 }
 
 .button_rounded {
@@ -78,7 +82,8 @@
 .pokemon {
 	@apply
 			p-4
-			h-64
+			h-96
+			bg-white
 }
 
 .loading {
@@ -87,7 +92,7 @@
 			bg-gradient-to-r from-gray-200 to-gray-500
 			animate-pulse
 			rounded-lg
-			h-64
+			h-96
 			flex
 			justify-center
 			items-center
@@ -97,6 +102,103 @@
 
 .pokemon h2{
 	@apply 
-			text-lg
+			text-2xl
 			font-semibold
+			capitalize 
+}
+
+.images {
+	@apply
+			grid
+			grid-cols-2
+			grid-rows-2
+			justify-center
+			justify-items-center
+			items-center;
+
+	grid-template-areas: 
+		"art default"
+		"art shiny";
+}
+
+.images .images_main {
+	grid-area: art;
+}
+.images .images_default {
+	grid-area: default;
+}
+.images .images_shiny {
+	grid-area: shiny;
+}
+
+.types ul{
+	@apply
+			flex
+			flex-row
+			gap-2
+}
+
+.types .type {
+	@apply
+		text-white
+		uppercase 
+		rounded-md
+		inline-block
+		px-2
+		py-1;
+		text-shadow: 1px 1px 2px black;
+}
+.types .normal{
+	background-color: #a8a878;
+}
+.types .fire{
+	background-color: #f08030;
+}
+.types .water{
+	background-color: #6890f0;
+}
+.types .grass{
+	background-color: #78c850;
+}
+.types .electric{
+	background-color: #f8d030;
+}
+.types .ice{
+	background-color: #98d8d8;
+}
+.types .ground{
+	background-color: #e0c068;
+}
+.types .flying{
+	background-color: #a890f0;
+}
+.types .poison{
+	background-color: #a040a0;
+}
+.types .fighting{
+	background-color: #c03028;
+}
+.types .psychic{
+	background-color: #f85888;
+}
+.types .dark{
+	background-color: #705848;
+}
+.types .rock{
+	background-color: #b8a038;
+}
+.types .bug{
+	background-color: #a8b820;
+}
+.types .ghost{
+	background-color: #705898;
+}
+.types .steel{
+	background-color: #b8b8d0;
+}
+.types .dragon{
+	background-color: #7038f8;
+}
+.types .fairy{
+	background-color: #ffaec9;
 }

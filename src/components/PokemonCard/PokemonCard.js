@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Loading from './../Loading/Loading'
 import useFetch from 'use-http'
 
@@ -6,54 +6,37 @@ const API = "https://pokeapi.co/api/v2/pokemon/"
 
 function PokemonCard({pokemonNumber}) {
 
-const [shiny, setshiny] = useState(false)	
-
-useEffect(() => {
-	setshiny(false)
-}, [pokemonNumber])
-
 
 	const { loading, error, data = [] } = useFetch(`${API}${pokemonNumber}`, {}, [pokemonNumber])
-
-	const capitalizeWord = (str) => {
-		const start = str.slice(0,1).toUpperCase()
-		const end = str.slice(1)
-
-		return start+end
-	}
-
-	const toggleShiny = () => {
-		setshiny(!shiny)
-	}
 	 
 	return (
-		<>
+		<section className="pokemon">
 		 {error && 'Error...'}
 		 {loading ? <Loading /> 
 		 :
-		<section className="pokemon">
-			<h2>{data.id} - {capitalizeWord(data.species.name)}</h2>
-			<section className="types">
-				<p>Types</p>
+		<>
+			<h2>#{data.id} {data.species.name}</h2>
+
+
+			<picture className="images">
+	<img className="images_main" src={data.sprites.other["official-artwork"].front_default} alt=""/>
+			<img className="images_shiny" src={data.sprites.front_shiny} alt=""/>
+			<img className="images_default" src={data.sprites.front_default} alt=""/>
+			</picture>
+	
+					<section className="types">
 		<ul>
 				{data.types.map(item => {
-					return <li key={item.slot}>{item.type.name}</li>
+					return <li key={item.slot} className={"type " + item.type.name}>{item.type.name}</li>
 				})}
 				
 			</ul>
 			</section>
-	
-			{shiny ? 
-			<img src={data.sprites.front_shiny} alt=""/>
-			: 
-			<img src={data.sprites.front_default} alt=""/>
-
-		}
-			<button type="button" onClick={toggleShiny}>Toggle Shiny</button>
-		</section>
-		}
 
 		</>
+		}
+
+		</section>
 	)
 }
 
