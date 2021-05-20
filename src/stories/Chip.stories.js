@@ -1,29 +1,21 @@
 import React from 'react';
 
-import { Chip } from './Chip';
+import Chip from './../components/Chip/Chip';
 
 export default {
   title: 'Components/Chip',
   component: Chip
 };
 
-const Template = (args) => <Chip {...args} />;
+const Template = (args) => <Chip name="normal" {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
-	item: {
-		type: {
-			name: "normal"
-		}
-	}
+	name: "normal"
 };
 
 export const Water = Template.bind({});
 Water.args = {
-	item: {
-		type: {
-			name: "water"
-		}
-	}
+	name: "water"
 };
 

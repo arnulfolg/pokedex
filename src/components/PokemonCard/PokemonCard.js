@@ -1,5 +1,6 @@
 import React from 'react'
 import Loading from './../Loading/Loading'
+import Chip from './../Chip/Chip'
 import useFetch from 'use-http'
 
 const API = "https://pokeapi.co/api/v2/pokemon/"
@@ -24,11 +25,11 @@ function PokemonCard({pokemonNumber, types}) {
 			<img className="images_default" src={data.sprites.front_default} alt=""/>
 			</picture>
 	
-					<section className="types">
+					<section className="">
 		<ul>
 			{types != null ? types(data.types) : null}
 				{data.types.map(item => {
-					return <li key={item.slot} className={"type " + item.type.name}>{item.type.name}</li>
+					return <Chip key={item.slot} name={item.type.name} />
 				})}
 				
 			</ul>
