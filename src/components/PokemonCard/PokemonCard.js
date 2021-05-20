@@ -4,7 +4,7 @@ import useFetch from 'use-http'
 
 const API = "https://pokeapi.co/api/v2/pokemon/"
 
-function PokemonCard({pokemonNumber}) {
+function PokemonCard({pokemonNumber, types}) {
 
 
 	const { loading, error, data = [] } = useFetch(`${API}${pokemonNumber}`, {}, [pokemonNumber])
@@ -26,6 +26,7 @@ function PokemonCard({pokemonNumber}) {
 	
 					<section className="types">
 		<ul>
+			{types(data.types)}
 				{data.types.map(item => {
 					return <li key={item.slot} className={"type " + item.type.name}>{item.type.name}</li>
 				})}

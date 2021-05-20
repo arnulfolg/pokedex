@@ -1,3 +1,7 @@
+:root {
+	--main-color: red;
+}
+
 .App {
 	@apply
 			flex
@@ -11,19 +15,18 @@
 	@apply 
 			bg-white
 			p-4
-			bg-red-600
 			rounded-lg
-			w-6/12
+			w-6/12;
 }
 
 .header {
 	@apply 
-			bg-red-600
 			text-white
 			rounded-t-lg
 			p-4
 			text-2xl
-			font-bold
+			font-bold;
+			
 }
 
 .header span {
@@ -148,57 +151,58 @@
 		py-1;
 		text-shadow: 1px 1px 2px black;
 }
-.types .normal{
+
+.normal{
 	background-color: #a8a878;
 }
-.types .fire{
+.fire{
 	background-color: #f08030;
 }
-.types .water{
+.water{
 	background-color: #6890f0;
 }
-.types .grass{
+.grass{
 	background-color: #78c850;
 }
-.types .electric{
+.electric{
 	background-color: #f8d030;
 }
-.types .ice{
+.ice{
 	background-color: #98d8d8;
 }
-.types .ground{
+.ground{
 	background-color: #e0c068;
 }
-.types .flying{
+.flying{
 	background-color: #a890f0;
 }
-.types .poison{
+.poison{
 	background-color: #a040a0;
 }
-.types .fighting{
+.fighting{
 	background-color: #c03028;
 }
-.types .psychic{
+.psychic{
 	background-color: #f85888;
 }
-.types .dark{
+.dark{
 	background-color: #705848;
 }
-.types .rock{
+.rock{
 	background-color: #b8a038;
 }
-.types .bug{
+.bug{
 	background-color: #a8b820;
 }
-.types .ghost{
+.ghost{
 	background-color: #705898;
 }
-.types .steel{
+.steel{
 	background-color: #b8b8d0;
 }
-.types .dragon{
+.dragon{
 	background-color: #7038f8;
 }
-.types .fairy{
+.fairy{
 	background-color: #ffaec9;
 }
