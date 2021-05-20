@@ -1,0 +1,102 @@
+.App {
+	@apply
+			flex
+			justify-center
+			items-center
+			h-screen
+			bg-red-200
+}
+
+.pokedex {
+	@apply 
+			bg-white
+			p-0
+			rounded-lg
+			w-6/12
+}
+
+.header {
+	@apply 
+			bg-red-600
+			text-white
+			rounded-t-lg
+			p-4
+			text-2xl
+			font-bold
+}
+
+.header span {
+	@apply 
+			text-base
+			font-medium
+			italic 
+}
+
+.form {
+	@apply 
+			p-4
+			flex
+			flex-wrap
+			flex-row
+			gap-1
+}
+
+.button {
+	@apply
+			bg-gray-500
+			hover:bg-gray-800
+			transition-all
+			px-4
+			py-2
+			text-white
+			hover:text-white
+			rounded-md
+}
+
+.numbers {
+	@apply 
+			flex-grow
+			flex
+			flex-row
+			gap-0
+}
+
+.input {
+	@apply 
+			rounded-lg
+			w-24
+			border-red-400
+			border-2
+			flex-grow
+}
+
+.button_rounded {
+	@apply
+			rounded-full
+}
+
+.pokemon {
+	@apply
+			p-4
+			h-64
+}
+
+.loading {
+	@apply 
+			m-4
+			bg-gradient-to-r from-gray-200 to-gray-500
+			animate-pulse
+			rounded-lg
+			h-64
+			flex
+			justify-center
+			items-center
+			text-lg
+			font-semibold
+}
+
+.pokemon h2{
+	@apply 
+			text-lg
+			font-semibold
+}

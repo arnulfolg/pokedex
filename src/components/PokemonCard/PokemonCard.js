@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Loading from './../Loading/Loading'
 import useFetch from 'use-http'
 
 const API = "https://pokeapi.co/api/v2/pokemon/"
@@ -28,17 +29,20 @@ useEffect(() => {
 	return (
 		<>
 		 {error && 'Error...'}
-		 {loading ? 'Loading...' 
+		 {loading ? <Loading /> 
 		 :
-				<section>
-			<h2>{data.id}</h2>
-			<h2>{capitalizeWord(data.species.name)}</h2>
-			<ul>
+		<section className="pokemon">
+			<h2>{data.id} - {capitalizeWord(data.species.name)}</h2>
+			<section className="types">
+				<p>Types</p>
+		<ul>
 				{data.types.map(item => {
 					return <li key={item.slot}>{item.type.name}</li>
 				})}
 				
 			</ul>
+			</section>
+	
 			{shiny ? 
 			<img src={data.sprites.front_shiny} alt=""/>
 			: 

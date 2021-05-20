@@ -16,11 +16,14 @@ function App() {
 	}
 	
   return (
-    <div className="App">
-        <Header></Header>
+    <section className="App">
+        <section className="pokedex">
+          <Header></Header>
         <Form handleChange={changeNumber}></Form>
         <PokemonCard pokemonNumber={getNumber}></PokemonCard>
-    </div>
+        </section>
+        
+    </section>
   );
 }
 
