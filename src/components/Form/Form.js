@@ -1,37 +1,50 @@
-import React from 'react'
-import {useFormik } from 'formik'
+import React from "react";
+import { useFormik } from "formik";
 
-function Form({handleChange}) {
-
-
+function Form({ handleChange }) {
 	const formik = useFormik({
 		initialValues: {
-			pokemonNumber: 1
+			pokemonNumber: 1,
 		},
-		onSubmit: ({pokemonNumber}) => {
-			handleChange(pokemonNumber)
-		}
-	})
+		onSubmit: ({ pokemonNumber }) => {
+			handleChange(pokemonNumber);
+		},
+	});
 
 	const searchRandomPokemon = (e) => {
 		const randomPokemonId = Math.round(Math.random() * (898 - 1) + 1);
-		formik.values.pokemonNumber = randomPokemonId
-		handleChange(randomPokemonId)
-};
-	
+		formik.values.pokemonNumber = randomPokemonId;
+		handleChange(randomPokemonId);
+	};
+
 	return (
 		<form className="form" onSubmit={formik.handleSubmit}>
 			<section className="numbers">
-				<input className="input" type="number" id="pokemonNumber" name="pokemonNumber" onChange={formik.handleChange} value={formik.values.pokemonNumber} />
+				<input
+					className="input"
+					type="number"
+					id="pokemonNumber"
+					name="pokemonNumber"
+					onChange={formik.handleChange}
+					value={formik.values.pokemonNumber}
+				/>
 			</section>
 			<section>
-				<button className="button" type="submit">Search</button>
+				<button className="button" type="submit">
+					Search
+				</button>
 			</section>
 			<section>
-				<button className="button" type="button" onClick={searchRandomPokemon}>Random Pokemon</button>
+				<button
+					className="button"
+					type="button"
+					onClick={searchRandomPokemon}
+				>
+					Random Pokemon
+				</button>
 			</section>
 		</form>
-	)
+	);
 }
 
-export default Form
+export default Form;
