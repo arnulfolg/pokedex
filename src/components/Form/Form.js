@@ -1,11 +1,18 @@
 import React from "react";
 import { useFormik } from "formik";
+import * as Yup from "yup";
 
 function Form({ handleChange }) {
 	const formik = useFormik({
 		initialValues: {
 			pokemonNumber: 1,
 		},
+		validationSchema: Yup.object({
+			pokemonNumber: Yup.number()
+				.min(1, "Must be at least 1")
+				.max(898, "Must not be greater than 898")
+				.required("Required"),
+		}),
 		onSubmit: ({ pokemonNumber }) => {
 			handleChange(pokemonNumber);
 		},
@@ -30,7 +37,11 @@ function Form({ handleChange }) {
 				/>
 			</section>
 			<section>
-				<button className="button" type="submit">
+				<button
+					className="button"
+					type="submit"
+					disabled={!formik.isValid}
+				>
 					Search
 				</button>
 			</section>
