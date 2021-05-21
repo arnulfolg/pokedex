@@ -1,66 +1,1056 @@
+:root {
+	--normal: #a8a878;
+	--fire: #f08030;
+	--water: #6890f0;
+	--grass: #78c850;
+	--electric: #f8d030;
+	--ice: #98d8d8;
+	--ground: #e0c068;
+	--flying: #a890f0;
+	--poison: #a040a0;
+	--fighting: #c03028;
+	--psychic: #f85888;
+	--dark: #705848;
+	--rock: #b8a038;
+	--bug: #a8b820;
+	--ghost: #705898;
+	--steel: #b8b8d0;
+	--dragon: #7038f8;
+	--fairy: #ffaec9;
+}
 
 .type {
-	@apply
-		text-white
+	@apply text-white
 		uppercase 
 		rounded-md
 		inline-block
 		px-2
 		py-1;
-		text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 2px black;
 }
 
-.normal{
-	background-color: #a8a878;
+.normal {
+	background-color: var(--normal);
 }
-.fire{
-	background-color: #f08030;
+.fire {
+	background-color: var(--fire);
 }
-.water{
-	background-color: #6890f0;
+.water {
+	background-color: var(--water);
 }
-.grass{
-	background-color: #78c850;
+.grass {
+	background-color: var(--grass);
 }
-.electric{
-	background-color: #f8d030;
+.electric {
+	background-color: var(--electric);
 }
-.ice{
-	background-color: #98d8d8;
+.ice {
+	background-color: var(--ice);
 }
-.ground{
-	background-color: #e0c068;
+.ground {
+	background-color: var(--ground);
 }
-.flying{
-	background-color: #a890f0;
+.flying {
+	background-color: var(--flying);
 }
-.poison{
-	background-color: #a040a0;
+.poison {
+	background-color: var(--poison);
 }
-.fighting{
-	background-color: #c03028;
+.fighting {
+	background-color: var(--fighting);
 }
-.psychic{
-	background-color: #f85888;
+.psychic {
+	background-color: var(--psychic);
 }
-.dark{
-	background-color: #705848;
+.dark {
+	background-color: var(--dark);
 }
-.rock{
-	background-color: #b8a038;
+.rock {
+	background-color: var(--rock);
 }
-.bug{
-	background-color: #a8b820;
+.bug {
+	background-color: var(--bug);
 }
-.ghost{
-	background-color: #705898;
+.ghost {
+	background-color: var(--ghost);
 }
-.steel{
-	background-color: #b8b8d0;
+.steel {
+	background-color: var(--steel);
 }
-.dragon{
-	background-color: #7038f8;
+.dragon {
+	background-color: var(--dragon);
 }
-.fairy{
-	background-color: #ffaec9;
+.fairy {
+	background-color: var(--fairy);
+}
+
+/* NORMAL */
+.normal.fire {
+	background: linear-gradient(var(--normal), var(--fire));
+}
+.normal.water {
+	background: linear-gradient(var(--normal), var(--water));
+}
+.normal.grass {
+	background: linear-gradient(var(--normal), var(--grass));
+}
+.normal.electric {
+	background: linear-gradient(var(--normal), var(--electric));
+}
+.normal.ice {
+	background: linear-gradient(var(--normal), var(--ice));
+}
+.normal.ground {
+	background: linear-gradient(var(--normal), var(--ground));
+}
+.normal.flying {
+	background: linear-gradient(var(--normal), var(--flying));
+}
+.normal.poison {
+	background: linear-gradient(var(--normal), var(--poison));
+}
+.normal.fighting {
+	background: linear-gradient(var(--normal), var(--fighting));
+}
+.normal.psychic {
+	background: linear-gradient(var(--normal), var(--psychic));
+}
+.normal.dark {
+	background: linear-gradient(var(--normal), var(--dark));
+}
+.normal.rock {
+	background: linear-gradient(var(--normal), var(--rock));
+}
+.normal.bug {
+	background: linear-gradient(var(--normal), var(--bug));
+}
+.normal.ghost {
+	background: linear-gradient(var(--normal), var(--ghost));
+}
+.normal.steel {
+	background: linear-gradient(var(--normal), var(--steel));
+}
+.normal.dragon {
+	background: linear-gradient(var(--normal), var(--dragon));
+}
+.normal.fairy {
+	background: linear-gradient(var(--normal), var(--fairy));
+}
+
+/* FIRE */
+
+.fire.normal {
+	background: linear-gradient(var(--fire), var(--normal));
+}
+.fire.water {
+	background: linear-gradient(var(--fire), var(--water));
+}
+.fire.grass {
+	background: linear-gradient(var(--fire), var(--grass));
+}
+.fire.electric {
+	background: linear-gradient(var(--fire), var(--electric));
+}
+.fire.ice {
+	background: linear-gradient(var(--fire), var(--ice));
+}
+.fire.ground {
+	background: linear-gradient(var(--fire), var(--ground));
+}
+.fire.flying {
+	background: linear-gradient(var(--fire), var(--flying));
+}
+.fire.poison {
+	background: linear-gradient(var(--fire), var(--poison));
+}
+.fire.fighting {
+	background: linear-gradient(var(--fire), var(--fighting));
+}
+.fire.psychic {
+	background: linear-gradient(var(--fire), var(--psychic));
+}
+.fire.dark {
+	background: linear-gradient(var(--fire), var(--dark));
+}
+.fire.rock {
+	background: linear-gradient(var(--fire), var(--rock));
+}
+.fire.bug {
+	background: linear-gradient(var(--fire), var(--bug));
+}
+.fire.ghost {
+	background: linear-gradient(var(--fire), var(--ghost));
+}
+.fire.steel {
+	background: linear-gradient(var(--fire), var(--steel));
+}
+.fire.dragon {
+	background: linear-gradient(var(--fire), var(--dragon));
+}
+.fire.fairy {
+	background: linear-gradient(var(--fire), var(--fairy));
+}
+
+/* WATER */
+
+.water.normal {
+	background: linear-gradient(var(--water), var(--normal));
+}
+.water.fire {
+	background: linear-gradient(var(--water), var(--fire));
+}
+.water.grass {
+	background: linear-gradient(var(--water), var(--grass));
+}
+.water.electric {
+	background: linear-gradient(var(--water), var(--electric));
+}
+.water.ice {
+	background: linear-gradient(var(--water), var(--ice));
+}
+.water.ground {
+	background: linear-gradient(var(--water), var(--ground));
+}
+.water.flying {
+	background: linear-gradient(var(--water), var(--flying));
+}
+.water.poison {
+	background: linear-gradient(var(--water), var(--poison));
+}
+.water.fighting {
+	background: linear-gradient(var(--water), var(--fighting));
+}
+.water.psychic {
+	background: linear-gradient(var(--water), var(--psychic));
+}
+.water.dark {
+	background: linear-gradient(var(--water), var(--dark));
+}
+.water.rock {
+	background: linear-gradient(var(--water), var(--rock));
+}
+.water.bug {
+	background: linear-gradient(var(--water), var(--bug));
+}
+.water.ghost {
+	background: linear-gradient(var(--water), var(--ghost));
+}
+.water.steel {
+	background: linear-gradient(var(--water), var(--steel));
+}
+.water.dragon {
+	background: linear-gradient(var(--water), var(--dragon));
+}
+.water.fairy {
+	background: linear-gradient(var(--water), var(--fairy));
+}
+
+/*  */
+
+.grass.normal {
+	background: linear-gradient(var(--grass), var(--normal));
+}
+.grass.fire {
+	background: linear-gradient(var(--grass), var(--fire));
+}
+.grass.water {
+	background: linear-gradient(var(--grass), var(--water));
+}
+.grass.electric {
+	background: linear-gradient(var(--grass), var(--electric));
+}
+.grass.ice {
+	background: linear-gradient(var(--grass), var(--ice));
+}
+.grass.ground {
+	background: linear-gradient(var(--grass), var(--ground));
+}
+.grass.flying {
+	background: linear-gradient(var(--grass), var(--flying));
+}
+.grass.poison {
+	background: linear-gradient(var(--grass), var(--poison));
+}
+.grass.fighting {
+	background: linear-gradient(var(--grass), var(--fighting));
+}
+.grass.psychic {
+	background: linear-gradient(var(--grass), var(--psychic));
+}
+.grass.dark {
+	background: linear-gradient(var(--grass), var(--dark));
+}
+.grass.rock {
+	background: linear-gradient(var(--grass), var(--rock));
+}
+.grass.bug {
+	background: linear-gradient(var(--grass), var(--bug));
+}
+.grass.ghost {
+	background: linear-gradient(var(--grass), var(--ghost));
+}
+.grass.steel {
+	background: linear-gradient(var(--grass), var(--steel));
+}
+.grass.dragon {
+	background: linear-gradient(var(--grass), var(--dragon));
+}
+.grass.fairy {
+	background: linear-gradient(var(--grass), var(--fairy));
+}
+
+/* ELECTRIC */
+
+.electric.normal {
+	background: linear-gradient(var(--electric), var(--normal));
+}
+.electric.fire {
+	background: linear-gradient(var(--electric), var(--fire));
+}
+.electric.water {
+	background: linear-gradient(var(--electric), var(--water));
+}
+.electric.grass {
+	background: linear-gradient(var(--electric), var(--grass));
+}
+.electric.ice {
+	background: linear-gradient(var(--electric), var(--ice));
+}
+.electric.ground {
+	background: linear-gradient(var(--electric), var(--ground));
+}
+.electric.flying {
+	background: linear-gradient(var(--electric), var(--flying));
+}
+.electric.poison {
+	background: linear-gradient(var(--electric), var(--poison));
+}
+.electric.fighting {
+	background: linear-gradient(var(--electric), var(--fighting));
+}
+.electric.psychic {
+	background: linear-gradient(var(--electric), var(--psychic));
+}
+.electric.dark {
+	background: linear-gradient(var(--electric), var(--dark));
+}
+.electric.rock {
+	background: linear-gradient(var(--electric), var(--rock));
+}
+.electric.bug {
+	background: linear-gradient(var(--electric), var(--bug));
+}
+.electric.ghost {
+	background: linear-gradient(var(--electric), var(--ghost));
+}
+.electric.steel {
+	background: linear-gradient(var(--electric), var(--steel));
+}
+.electric.dragon {
+	background: linear-gradient(var(--electric), var(--dragon));
+}
+.electric.fairy {
+	background: linear-gradient(var(--electric), var(--fairy));
+}
+
+/* ICE */
+
+.ice.normal {
+	background: linear-gradient(var(--ice), var(--normal));
+}
+.ice.fire {
+	background: linear-gradient(var(--ice), var(--fire));
+}
+.ice.water {
+	background: linear-gradient(var(--ice), var(--water));
+}
+.ice.grass {
+	background: linear-gradient(var(--ice), var(--grass));
+}
+.ice.electric {
+	background: linear-gradient(var(--ice), var(--electric));
+}
+.ice.ground {
+	background: linear-gradient(var(--ice), var(--ground));
+}
+.ice.flying {
+	background: linear-gradient(var(--ice), var(--flying));
+}
+.ice.poison {
+	background: linear-gradient(var(--ice), var(--poison));
+}
+.ice.fighting {
+	background: linear-gradient(var(--ice), var(--fighting));
+}
+.ice.psychic {
+	background: linear-gradient(var(--ice), var(--psychic));
+}
+.ice.dark {
+	background: linear-gradient(var(--ice), var(--dark));
+}
+.ice.rock {
+	background: linear-gradient(var(--ice), var(--rock));
+}
+.ice.bug {
+	background: linear-gradient(var(--ice), var(--bug));
+}
+.ice.ghost {
+	background: linear-gradient(var(--ice), var(--ghost));
+}
+.ice.steel {
+	background: linear-gradient(var(--ice), var(--steel));
+}
+.ice.dragon {
+	background: linear-gradient(var(--ice), var(--dragon));
+}
+.ice.fairy {
+	background: linear-gradient(var(--ice), var(--fairy));
+}
+
+/* GROUND */
+
+.ground.normal {
+	background: linear-gradient(var(--ground), var(--normal));
+}
+.ground.fire {
+	background: linear-gradient(var(--ground), var(--fire));
+}
+.ground.water {
+	background: linear-gradient(var(--ground), var(--water));
+}
+.ground.grass {
+	background: linear-gradient(var(--ground), var(--grass));
+}
+.ground.electric {
+	background: linear-gradient(var(--ground), var(--electric));
+}
+.ground.ice {
+	background: linear-gradient(var(--ground), var(--ice));
+}
+.ground.flying {
+	background: linear-gradient(var(--ground), var(--flying));
+}
+.ground.poison {
+	background: linear-gradient(var(--ground), var(--poison));
+}
+.ground.fighting {
+	background: linear-gradient(var(--ground), var(--fighting));
+}
+.ground.psychic {
+	background: linear-gradient(var(--ground), var(--psychic));
+}
+.ground.dark {
+	background: linear-gradient(var(--ground), var(--dark));
+}
+.ground.rock {
+	background: linear-gradient(var(--ground), var(--rock));
+}
+.ground.bug {
+	background: linear-gradient(var(--ground), var(--bug));
+}
+.ground.ghost {
+	background: linear-gradient(var(--ground), var(--ghost));
+}
+.ground.steel {
+	background: linear-gradient(var(--ground), var(--steel));
+}
+.ground.dragon {
+	background: linear-gradient(var(--ground), var(--dragon));
+}
+.ground.fairy {
+	background: linear-gradient(var(--ground), var(--fairy));
+}
+
+/* FLYING */
+
+.flying.normal {
+	background: linear-gradient(var(--flying), var(--normal));
+}
+.flying.fire {
+	background: linear-gradient(var(--flying), var(--fire));
+}
+.flying.water {
+	background: linear-gradient(var(--flying), var(--water));
+}
+.flying.grass {
+	background: linear-gradient(var(--flying), var(--grass));
+}
+.flying.electric {
+	background: linear-gradient(var(--flying), var(--electric));
+}
+.flying.ice {
+	background: linear-gradient(var(--flying), var(--ice));
+}
+.flying.ground {
+	background: linear-gradient(var(--flying), var(--ground));
+}
+.flying.poison {
+	background: linear-gradient(var(--flying), var(--poison));
+}
+.flying.fighting {
+	background: linear-gradient(var(--flying), var(--fighting));
+}
+.flying.psychic {
+	background: linear-gradient(var(--flying), var(--psychic));
+}
+.flying.dark {
+	background: linear-gradient(var(--flying), var(--dark));
+}
+.flying.rock {
+	background: linear-gradient(var(--flying), var(--rock));
+}
+.flying.bug {
+	background: linear-gradient(var(--flying), var(--bug));
+}
+.flying.ghost {
+	background: linear-gradient(var(--flying), var(--ghost));
+}
+.flying.steel {
+	background: linear-gradient(var(--flying), var(--steel));
+}
+.flying.dragon {
+	background: linear-gradient(var(--flying), var(--dragon));
+}
+.flying.fairy {
+	background: linear-gradient(var(--flying), var(--fairy));
+}
+
+/* POISON */
+
+.poison.normal {
+	background: linear-gradient(var(--poison), var(--normal));
+}
+.poison.fire {
+	background: linear-gradient(var(--poison), var(--fire));
+}
+.poison.water {
+	background: linear-gradient(var(--poison), var(--water));
+}
+.poison.grass {
+	background: linear-gradient(var(--poison), var(--grass));
+}
+.poison.electric {
+	background: linear-gradient(var(--poison), var(--electric));
+}
+.poison.ice {
+	background: linear-gradient(var(--poison), var(--ice));
+}
+.poison.ground {
+	background: linear-gradient(var(--poison), var(--ground));
+}
+.poison.flying {
+	background: linear-gradient(var(--poison), var(--flying));
+}
+.poison.fighting {
+	background: linear-gradient(var(--poison), var(--fighting));
+}
+.poison.psychic {
+	background: linear-gradient(var(--poison), var(--psychic));
+}
+.poison.dark {
+	background: linear-gradient(var(--poison), var(--dark));
+}
+.poison.rock {
+	background: linear-gradient(var(--poison), var(--rock));
+}
+.poison.bug {
+	background: linear-gradient(var(--poison), var(--bug));
+}
+.poison.ghost {
+	background: linear-gradient(var(--poison), var(--ghost));
+}
+.poison.steel {
+	background: linear-gradient(var(--poison), var(--steel));
+}
+.poison.dragon {
+	background: linear-gradient(var(--poison), var(--dragon));
+}
+.poison.fairy {
+	background: linear-gradient(var(--poison), var(--fairy));
+}
+
+/* FIGHTING */
+
+.fighting.normal {
+	background: linear-gradient(var(--fighting), var(--normal));
+}
+.fighting.fire {
+	background: linear-gradient(var(--fighting), var(--fire));
+}
+.fighting.water {
+	background: linear-gradient(var(--fighting), var(--water));
+}
+.fighting.grass {
+	background: linear-gradient(var(--fighting), var(--grass));
+}
+.fighting.electric {
+	background: linear-gradient(var(--fighting), var(--electric));
+}
+.fighting.ice {
+	background: linear-gradient(var(--fighting), var(--ice));
+}
+.fighting.ground {
+	background: linear-gradient(var(--fighting), var(--ground));
+}
+.fighting.flying {
+	background: linear-gradient(var(--fighting), var(--flying));
+}
+.fighting.poison {
+	background: linear-gradient(var(--fighting), var(--poison));
+}
+.fighting.psychic {
+	background: linear-gradient(var(--fighting), var(--psychic));
+}
+.fighting.dark {
+	background: linear-gradient(var(--fighting), var(--dark));
+}
+.fighting.rock {
+	background: linear-gradient(var(--fighting), var(--rock));
+}
+.fighting.bug {
+	background: linear-gradient(var(--fighting), var(--bug));
+}
+.fighting.ghost {
+	background: linear-gradient(var(--fighting), var(--ghost));
+}
+.fighting.steel {
+	background: linear-gradient(var(--fighting), var(--steel));
+}
+.fighting.dragon {
+	background: linear-gradient(var(--fighting), var(--dragon));
+}
+.fighting.fairy {
+	background: linear-gradient(var(--fighting), var(--fairy));
+}
+
+/* PSYCHIC */
+
+.psychic.normal {
+	background: linear-gradient(var(--psychic), var(--normal));
+}
+.psychic.fire {
+	background: linear-gradient(var(--psychic), var(--fire));
+}
+.psychic.water {
+	background: linear-gradient(var(--psychic), var(--water));
+}
+.psychic.grass {
+	background: linear-gradient(var(--psychic), var(--grass));
+}
+.psychic.electric {
+	background: linear-gradient(var(--psychic), var(--electric));
+}
+.psychic.ice {
+	background: linear-gradient(var(--psychic), var(--ice));
+}
+.psychic.ground {
+	background: linear-gradient(var(--psychic), var(--ground));
+}
+.psychic.flying {
+	background: linear-gradient(var(--psychic), var(--flying));
+}
+.psychic.poison {
+	background: linear-gradient(var(--psychic), var(--poison));
+}
+.psychic.fighting {
+	background: linear-gradient(var(--psychic), var(--fighting));
+}
+.psychic.dark {
+	background: linear-gradient(var(--psychic), var(--dark));
+}
+.psychic.rock {
+	background: linear-gradient(var(--psychic), var(--rock));
+}
+.psychic.bug {
+	background: linear-gradient(var(--psychic), var(--bug));
+}
+.psychic.ghost {
+	background: linear-gradient(var(--psychic), var(--ghost));
+}
+.psychic.steel {
+	background: linear-gradient(var(--psychic), var(--steel));
+}
+.psychic.dragon {
+	background: linear-gradient(var(--psychic), var(--dragon));
+}
+.psychic.fairy {
+	background: linear-gradient(var(--psychic), var(--fairy));
+}
+
+/* DARK */
+
+.dark.normal {
+	background: linear-gradient(var(--dark), var(--normal));
+}
+.dark.fire {
+	background: linear-gradient(var(--dark), var(--fire));
+}
+.dark.water {
+	background: linear-gradient(var(--dark), var(--water));
+}
+.dark.grass {
+	background: linear-gradient(var(--dark), var(--grass));
+}
+.dark.electric {
+	background: linear-gradient(var(--dark), var(--electric));
+}
+.dark.ice {
+	background: linear-gradient(var(--dark), var(--ice));
+}
+.dark.ground {
+	background: linear-gradient(var(--dark), var(--ground));
+}
+.dark.flying {
+	background: linear-gradient(var(--dark), var(--flying));
+}
+.dark.poison {
+	background: linear-gradient(var(--dark), var(--poison));
+}
+.dark.fighting {
+	background: linear-gradient(var(--dark), var(--fighting));
+}
+.dark.psychic {
+	background: linear-gradient(var(--dark), var(--psychic));
+}
+.dark.rock {
+	background: linear-gradient(var(--dark), var(--rock));
+}
+.dark.bug {
+	background: linear-gradient(var(--dark), var(--bug));
+}
+.dark.ghost {
+	background: linear-gradient(var(--dark), var(--ghost));
+}
+.dark.steel {
+	background: linear-gradient(var(--dark), var(--steel));
+}
+.dark.dragon {
+	background: linear-gradient(var(--dark), var(--dragon));
+}
+.dark.fairy {
+	background: linear-gradient(var(--dark), var(--fairy));
+}
+
+/* ROCK */
+
+.rock.normal {
+	background: linear-gradient(var(--rock), var(--normal));
+}
+.rock.fire {
+	background: linear-gradient(var(--rock), var(--fire));
+}
+.rock.water {
+	background: linear-gradient(var(--rock), var(--water));
+}
+.rock.grass {
+	background: linear-gradient(var(--rock), var(--grass));
+}
+.rock.electric {
+	background: linear-gradient(var(--rock), var(--electric));
+}
+.rock.ice {
+	background: linear-gradient(var(--rock), var(--ice));
+}
+.rock.ground {
+	background: linear-gradient(var(--rock), var(--ground));
+}
+.rock.flying {
+	background: linear-gradient(var(--rock), var(--flying));
+}
+.rock.poison {
+	background: linear-gradient(var(--rock), var(--poison));
+}
+.rock.fighting {
+	background: linear-gradient(var(--rock), var(--fighting));
+}
+.rock.psychic {
+	background: linear-gradient(var(--rock), var(--psychic));
+}
+.rock.dark {
+	background: linear-gradient(var(--rock), var(--dark));
+}
+.rock.bug {
+	background: linear-gradient(var(--rock), var(--bug));
+}
+.rock.ghost {
+	background: linear-gradient(var(--rock), var(--ghost));
+}
+.rock.steel {
+	background: linear-gradient(var(--rock), var(--steel));
+}
+.rock.dragon {
+	background: linear-gradient(var(--rock), var(--dragon));
+}
+.rock.fairy {
+	background: linear-gradient(var(--rock), var(--fairy));
+}
+
+/* BUG */
+
+.bug.normal {
+	background: linear-gradient(var(--bug), var(--normal));
+}
+.bug.fire {
+	background: linear-gradient(var(--bug), var(--fire));
+}
+.bug.water {
+	background: linear-gradient(var(--bug), var(--water));
+}
+.bug.grass {
+	background: linear-gradient(var(--bug), var(--grass));
+}
+.bug.electric {
+	background: linear-gradient(var(--bug), var(--electric));
+}
+.bug.ice {
+	background: linear-gradient(var(--bug), var(--ice));
+}
+.bug.ground {
+	background: linear-gradient(var(--bug), var(--ground));
+}
+.bug.flying {
+	background: linear-gradient(var(--bug), var(--flying));
+}
+.bug.poison {
+	background: linear-gradient(var(--bug), var(--poison));
+}
+.bug.fighting {
+	background: linear-gradient(var(--bug), var(--fighting));
+}
+.bug.psychic {
+	background: linear-gradient(var(--bug), var(--psychic));
+}
+.bug.dark {
+	background: linear-gradient(var(--bug), var(--dark));
+}
+.bug.rock {
+	background: linear-gradient(var(--bug), var(--rock));
+}
+.bug.ghost {
+	background: linear-gradient(var(--bug), var(--ghost));
+}
+.bug.steel {
+	background: linear-gradient(var(--bug), var(--steel));
+}
+.bug.dragon {
+	background: linear-gradient(var(--bug), var(--dragon));
+}
+.bug.fairy {
+	background: linear-gradient(var(--bug), var(--fairy));
+}
+
+/* GHOST */
+
+.ghost.normal {
+	background: linear-gradient(var(--ghost), var(--normal));
+}
+.ghost.fire {
+	background: linear-gradient(var(--ghost), var(--fire));
+}
+.ghost.water {
+	background: linear-gradient(var(--ghost), var(--water));
+}
+.ghost.grass {
+	background: linear-gradient(var(--ghost), var(--grass));
+}
+.ghost.electric {
+	background: linear-gradient(var(--ghost), var(--electric));
+}
+.ghost.ice {
+	background: linear-gradient(var(--ghost), var(--ice));
+}
+.ghost.ground {
+	background: linear-gradient(var(--ghost), var(--ground));
+}
+.ghost.flying {
+	background: linear-gradient(var(--ghost), var(--flying));
+}
+.ghost.poison {
+	background: linear-gradient(var(--ghost), var(--poison));
+}
+.ghost.fighting {
+	background: linear-gradient(var(--ghost), var(--fighting));
+}
+.ghost.psychic {
+	background: linear-gradient(var(--ghost), var(--psychic));
+}
+.ghost.dark {
+	background: linear-gradient(var(--ghost), var(--dark));
+}
+.ghost.rock {
+	background: linear-gradient(var(--ghost), var(--rock));
+}
+.ghost.bug {
+	background: linear-gradient(var(--ghost), var(--bug));
+}
+.ghost.steel {
+	background: linear-gradient(var(--ghost), var(--steel));
+}
+.ghost.dragon {
+	background: linear-gradient(var(--ghost), var(--dragon));
+}
+.ghost.fairy {
+	background: linear-gradient(var(--ghost), var(--fairy));
+}
+
+/* STEEL */
+
+.steel.normal {
+	background: linear-gradient(var(--steel), var(--normal));
+}
+.steel.fire {
+	background: linear-gradient(var(--steel), var(--fire));
+}
+.steel.water {
+	background: linear-gradient(var(--steel), var(--water));
+}
+.steel.grass {
+	background: linear-gradient(var(--steel), var(--grass));
+}
+.steel.electric {
+	background: linear-gradient(var(--steel), var(--electric));
+}
+.steel.ice {
+	background: linear-gradient(var(--steel), var(--ice));
+}
+.steel.ground {
+	background: linear-gradient(var(--steel), var(--ground));
+}
+.steel.flying {
+	background: linear-gradient(var(--steel), var(--flying));
+}
+.steel.poison {
+	background: linear-gradient(var(--steel), var(--poison));
+}
+.steel.fighting {
+	background: linear-gradient(var(--steel), var(--fighting));
+}
+.steel.psychic {
+	background: linear-gradient(var(--steel), var(--psychic));
+}
+.steel.dark {
+	background: linear-gradient(var(--steel), var(--dark));
+}
+.steel.rock {
+	background: linear-gradient(var(--steel), var(--rock));
+}
+.steel.bug {
+	background: linear-gradient(var(--steel), var(--bug));
+}
+.steel.ghost {
+	background: linear-gradient(var(--steel), var(--ghost));
+}
+.steel.dragon {
+	background: linear-gradient(var(--steel), var(--dragon));
+}
+.steel.fairy {
+	background: linear-gradient(var(--steel), var(--fairy));
+}
+
+/* DRAGON */
+
+.dragon.normal {
+	background: linear-gradient(var(--dragon), var(--normal));
+}
+.dragon.fire {
+	background: linear-gradient(var(--dragon), var(--fire));
+}
+.dragon.water {
+	background: linear-gradient(var(--dragon), var(--water));
+}
+.dragon.grass {
+	background: linear-gradient(var(--dragon), var(--grass));
+}
+.dragon.electric {
+	background: linear-gradient(var(--dragon), var(--electric));
+}
+.dragon.ice {
+	background: linear-gradient(var(--dragon), var(--ice));
+}
+.dragon.ground {
+	background: linear-gradient(var(--dragon), var(--ground));
+}
+.dragon.flying {
+	background: linear-gradient(var(--dragon), var(--flying));
+}
+.dragon.poison {
+	background: linear-gradient(var(--dragon), var(--poison));
+}
+.dragon.fighting {
+	background: linear-gradient(var(--dragon), var(--fighting));
+}
+.dragon.psychic {
+	background: linear-gradient(var(--dragon), var(--psychic));
+}
+.dragon.dark {
+	background: linear-gradient(var(--dragon), var(--dark));
+}
+.dragon.rock {
+	background: linear-gradient(var(--dragon), var(--rock));
+}
+.dragon.bug {
+	background: linear-gradient(var(--dragon), var(--bug));
+}
+.dragon.ghost {
+	background: linear-gradient(var(--dragon), var(--ghost));
+}
+.dragon.steel {
+	background: linear-gradient(var(--dragon), var(--steel));
+}
+.dragon.fairy {
+	background: linear-gradient(var(--dragon), var(--fairy));
+}
+
+/* FAIRY */
+
+.fairy.normal {
+	background: linear-gradient(var(--fairy), var(--normal));
+}
+.fairy.fire {
+	background: linear-gradient(var(--fairy), var(--fire));
+}
+.fairy.water {
+	background: linear-gradient(var(--fairy), var(--water));
+}
+.fairy.grass {
+	background: linear-gradient(var(--fairy), var(--grass));
+}
+.fairy.electric {
+	background: linear-gradient(var(--fairy), var(--electric));
+}
+.fairy.ice {
+	background: linear-gradient(var(--fairy), var(--ice));
+}
+.fairy.ground {
+	background: linear-gradient(var(--fairy), var(--ground));
+}
+.fairy.flying {
+	background: linear-gradient(var(--fairy), var(--flying));
+}
+.fairy.poison {
+	background: linear-gradient(var(--fairy), var(--poison));
+}
+.fairy.fighting {
+	background: linear-gradient(var(--fairy), var(--fighting));
+}
+.fairy.psychic {
+	background: linear-gradient(var(--fairy), var(--psychic));
+}
+.fairy.dark {
+	background: linear-gradient(var(--fairy), var(--dark));
+}
+.fairy.rock {
+	background: linear-gradient(var(--fairy), var(--rock));
+}
+.fairy.bug {
+	background: linear-gradient(var(--fairy), var(--bug));
+}
+.fairy.ghost {
+	background: linear-gradient(var(--fairy), var(--ghost));
+}
+.fairy.steel {
+	background: linear-gradient(var(--fairy), var(--steel));
+}
+.fairy.dragon {
+	background: linear-gradient(var(--fairy), var(--dragon));
 }

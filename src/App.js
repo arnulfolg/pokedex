@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react'
+import React, {useState } from 'react'
 
 import './App.css';
 
@@ -8,8 +8,7 @@ import PokemonCard from './components/PokemonCard/PokemonCard'
 
 function App() {
 
-  const [types, settypes] = useState(["normal"])
-	
+  const [types, settypes] = useState("normal")
 	
 	const [getNumber, setNumber] = useState(1)
 
@@ -17,16 +16,13 @@ function App() {
 		setNumber(newNumber)
 	}
 
-  const getTypes = useCallback((arr) => {
-    settypes(arr)
-  }, [settypes])
-	
+
   return (
     <section className="App">
-        <section className={"pokedex " + types[0].type?.name}>
+        <section className={"pokedex " + types}>
           <Header></Header>
         <Form handleChange={changeNumber}></Form>
-        <PokemonCard pokemonNumber={getNumber} types={getTypes}></PokemonCard>
+        <PokemonCard pokemonNumber={getNumber} types={settypes}></PokemonCard>
         </section>
         
     </section>

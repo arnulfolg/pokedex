@@ -3,52 +3,45 @@
 }
 
 .App {
-	@apply
-			flex
+	@apply flex
 			justify-center
 			items-center
 			min-h-screen
-			bg-red-50
+			bg-red-50;
 }
 
 .pokedex {
-	@apply 
-			bg-white
+	@apply bg-white
 			p-4
 			rounded-lg
 			w-6/12;
 }
 
 .header {
-	@apply 
-			text-white
+	@apply text-white
 			rounded-t-lg
 			p-4
 			text-2xl
 			font-bold;
-			
 }
 
 .header span {
-	@apply 
-			text-base
+	@apply text-base
 			font-medium
-			italic 
+			italic;
 }
 
 .form {
-	@apply 
-			p-4
+	@apply p-4
 			flex
 			flex-wrap
 			flex-row
 			gap-1
-			bg-white
+			bg-white;
 }
 
 .button {
-	@apply
-			bg-gray-800
+	@apply bg-gray-800
 			hover:bg-gray-600
 			transition-all
 			px-4
@@ -56,42 +49,37 @@
 			h-12
 			text-white
 			hover:text-white
-			rounded-md
+			rounded-md;
 }
 
 .numbers {
-	@apply 
-			flex-grow
+	@apply flex-grow
 			flex
 			flex-row
-			gap-0
+			gap-0;
 }
 
 .input {
-	@apply 
-			rounded-lg
+	@apply rounded-lg
 			w-24
 			border-red-400
 			border-2
 			flex-grow
-			h-12
+			h-12;
 }
 
 .button_rounded {
-	@apply
-			rounded-full
+	@apply rounded-full;
 }
 
 .pokemon {
-	@apply
-			p-4
+	@apply p-4
 			h-96
-			bg-white
+			bg-white;
 }
 
 .loading {
-	@apply 
-			m-4
+	@apply m-4
 			bg-gradient-to-r from-gray-200 to-gray-500
 			animate-pulse
 			rounded-lg
@@ -100,26 +88,24 @@
 			justify-center
 			items-center
 			text-lg
-			font-semibold
+			font-semibold;
 }
 
-.pokemon h2{
-	@apply 
-			text-2xl
+.pokemon h2 {
+	@apply text-2xl
 			font-semibold
-			capitalize 
+			capitalize;
 }
 
 .images {
-	@apply
-			grid
+	@apply grid
 			grid-cols-2
 			grid-rows-2
 			justify-center
 			justify-items-center
 			items-center;
 
-	grid-template-areas: 
+	grid-template-areas:
 		"art default"
 		"art shiny";
 }
@@ -134,9 +120,8 @@
 	grid-area: shiny;
 }
 
-.types ul{
-	@apply
-			flex
+.types ul {
+	@apply flex
 			flex-row
-			gap-2
+			gap-2;
 }
